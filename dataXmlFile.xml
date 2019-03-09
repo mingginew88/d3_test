@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<datalist>
+    <data><item>상품1</item><sales>150</sales><sales>120</sales><sales>180</sales></data>
+    <data><item>상품2</item><sales>120</sales><sales>90</sales><sales>250</sales></data>
+    <data><item>상품3</item><sales>180</sales><sales>230</sales><sales>100</sales></data>
+</datalist>

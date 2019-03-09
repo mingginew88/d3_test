@@ -1,6 +1,6 @@
 //데이터 셋 하기
 
-d3.csv("d3Data01.csv", function(error, data){
+d3.csv("dataCsvFile.csv", function(error, data){
     var dataSet  = [ ];
     var dataSet2 = [ ];
     var dataSet3 = [ ];
