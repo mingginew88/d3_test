@@ -13,7 +13,7 @@ d3.csv("dataCsvFile.csv")
             //console.log("데이터 셋 : ", dataSet[i]);
         }
 
-        d3.select("#myGraph_csv")
+        d3.select("#myGraphCsv")
             .selectAll("rect")
             .data(dataSet)
             .enter()
@@ -40,7 +40,7 @@ d3.json("dataJsonFile.json", function(error, data){
             //console.log("데이터 셋 : ", dataSet[i]);
         }
 
-        d3.select("#myGraph_json")
+        d3.select("#myGraphJson")
             .selectAll("rect")
             .data(dataSet)
             .enter()
@@ -68,7 +68,7 @@ d3.html("dataHtmlFile.html", function(error, docFragment){
         dataSet.push(data)
     }
 
-    d3.select("#myGraph_html")
+    d3.select("#myGraphHtml")
         .selectAll("rect")
         .data(dataSet)
         .enter()
@@ -97,7 +97,7 @@ d3.xml("dataXmlFile.xml", function (error, xmlRoot) {
         dataSet.push(data);
     }
 
-    d3.select("#myGraph_xml")
+    d3.select("#myGraphXml")
         .selectAll("rect")
         .data(dataSet)
         .enter()
@@ -124,7 +124,7 @@ d3.text("dataTextFile.txt", function(error, plainText){
         dataSet.push(sales[i]);
     }
 
-    d3.select("#myGraph_txt")
+    d3.select("#myGraphTxt")
         .selectAll("rect")
         .data(dataSet)
         .enter()
@@ -145,7 +145,7 @@ d3.text("dataTextFile2.txt", function(error, plainText){
     var dataSet = d3.dsv("_", "text/plain").parse(plainText);       // 특정 문자로 구분한 파일일 경우 dsv() 메서드를 이용할 수 있다.
                                                                           // 구분문자와 MimeType 지정 이후 parse() 메서드로 해석 처리를 수행
 
-    d3.select("#myGraph_txt2")
+    d3.select("#myGraphTxt2")
         .selectAll("rect")
         .data(dataSet)
         .enter()

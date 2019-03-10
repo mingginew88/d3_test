@@ -1,5 +1,5 @@
 // CSV 파일을 불러와 그래프 그리기
-d3.csv("mydata2.csv", function(error, data){
+d3.csv("dataCsvFile2.csv", function(error, data){
 	var dataName = [ ];					// 데이터 이름 배열 준비
 	var dataSet = [ ];					// 데이터를 저장할 배열을 준비
 

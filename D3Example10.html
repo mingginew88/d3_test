@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>세로 막대 그래프 그리기</title>
+    <style>
+        svg {
+            width  : 320px;
+            height : 260px;
+            border : 1px solid black;
+        }
+        .bar {
+            fill : cadetblue;
+        }
+        .barText {
+            font-size : 9pt;
+            text-anchor : middle;
+        }
+        .barText2 {
+            font-size : 9pt;
+            text-anchor: middle;
+            writing-mode: lr;
+            glyph-orientation-vertical : 0
+        }
+        .barName {
+            font-size: 9pt;
+            text-anchor: middle;
+        }
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+        .axis path, axis line {
+            fill : none;
+            stroke : black;
+        }
+        .axis_x line {
+            fill : none;
+            stroke : black;
+        }
+    </style>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./D3Example10.js"></script>
+</head>
+<body>
+<h2>csv 데이터를 이용한 세로막대그래프</h2>
+<h3>barText 와 barText2 css 형식에 따라 텍스트 가로세로 위치 변경 가능</h3>
+<br>
+<svg id="myGraphCsv"></svg>
+
+</body>
+</html>
