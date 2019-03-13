@@ -61,6 +61,9 @@ d3.csv("dataCsvFile.csv", function(error, data){
             d3.svg.axis()
                 .scale(yScale)
                 .orient("left")
+                .ticks(10)                                                          // 눈금 간격
+                .tickValues([10.5, 20, 30.5, 50.25, 75.275, 100, 200])           // 보여줄 눈금 값 지정
+                .tickFormat(d3.format(".2f"))                                       //  소수점 2번쨰 자리까지
         )
 
     //가로방향 선 표시

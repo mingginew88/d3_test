@@ -3,29 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>D3 Test</title>
-    <style>
-        svg {
-            width  : 320px;
-            height : 240px;
-            border : 1px solid black;
-        }
-        .bar {
-            fill : cadetblue;
-        }
-    </style>
+    <!-- css -->
+    <link rel = "stylesheet" type = "text/css" href = "./basic.css">
+    <!-- js -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./D3Example09.js"></script>
 </head>
 <body>
-<h2>csv 형식의 데이터 셋</h2>
-<h3>요소값을 datum() 메서드를 이용하여 변경</h3>
-<button data-src="dataCsvFile.csv">first CSV 파일</button>
-<button data-src="dataCsvFile3.csv">second CSV 파일</button>
-<button data-src="dataCsvFile4.csv">third CSV 파일</button>
-<br>
-<svg id="myGraphCsv"></svg>
-
-
-<script src="./D3Example09.js"></script>
-
+    <h2>csv 형식의 데이터 셋</h2>
+    <h3>요소값을 datum() 메서드를 이용하여 변경</h3>
+    <button data-src="dataCsvFile.csv">first CSV 파일</button>
+    <button data-src="dataCsvFile3.csv">second CSV 파일</button>
+    <button data-src="dataCsvFile4.csv">third CSV 파일</button>
+    <br>
+    <svg id="myGraphCsv"></svg>
 </body>
 </html>
