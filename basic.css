@@ -32,3 +32,15 @@ svg {
     fill : none;
     stroke : black;
 }
+.pie {
+    fill : orange;
+    stroke : white;
+}
+.total {
+    font-size : 9pt;
+    text-anchor : middle;
+}
+.pieText {
+    font-size: 10pt;
+    text-anchor: middle;
+}
