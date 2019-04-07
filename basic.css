@@ -62,3 +62,7 @@ svg {
     stroke: #CCCCCC;
     stroke-width:1px;
 }
+.line {
+    fill : none;
+    stroke : black;
+}

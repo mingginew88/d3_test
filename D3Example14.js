@@ -12,7 +12,7 @@ d3.select("#product").on("change", function(){
     // svg 안의 모든 요소 삭제
     d3.select("#pieGraphData").selectAll("*").remove();
     // 지정된 연도의 데이터를 불러와 원 그래프 표시
-
+    console.log("hello : ", "product"+this.value+".csv");
     drawPieGraph("product"+this.value+".csv", this.value);
 });
 
@@ -22,9 +22,9 @@ function drawPieGraph(fileName) {
     d3.csv(fileName, function(error, data) {
         for(var i in data[0]) {             // 최초 데이터 처리
             dataSet.push(data[0][i]);       // 가로 데이터 한줄 입력
-            console.log("dd", dataSet);
         }
 
+        // 정렬 (내림차순)
         dataSet.sort(function(a, b) {
             return b - a;
         })
